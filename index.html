@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="js/home.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+</head>
+
+<body onload="loadSell()">
+    <!-- Page load -->
+    <!-- <div id="preloder">
+        <div class="loader"></div>
+    </div> -->
+    <!-- Header -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-branch" href="index.html">
+                <img src="./image/logo.png" height="50" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sell</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Rent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="add.html">Seller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Carousel -->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+            <!-- <li data-target="#slides" data-slide-to="3"></li> -->
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./image/house3.jpg">
+                <div class="carousel-caption">
+                    <h1 class="display-2">DREAM HOUSE</h1>
+                    <h3>Follow me and find a dream house</h3>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./image/house4.jpg">
+                <div class="carousel-caption">
+                    <h1 class="display-2">DREAM HOUSE</h1>
+                    <h3>Follow me and find a dream house</h3>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./image/house2.jpg">
+                <div class="carousel-caption">
+                    <h1 class="display-2">DREAM HOUSE</h1>
+                    <h3>Follow me and find a dream house</h3>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Search -->
+
+    <div class="filter-search" id="rowSearch">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-12 col-md-6">
+                    <form class="filter-form">
+                        <div class="search-location">
+                            <p>Location</p>
+                            <select class="filter-location">
+                                <option value="">UK</option>
+                                <option value="">US</option>
+                                <option value="">UAE</option>
+                            </select>
+                        </div>
+                        <div class="search-type">
+                            <p>Property Type</p>
+                            <select class="filter-property">
+                                <option value="">House</option>
+                                <option value="">Resort</option>
+                                <option value="">Hotel</option>
+                            </select>
+                        </div>
+                        <div class="search-type">
+                            <p>Price</p>
+                            <select class="filter-property">
+                                <option value="">1000$</option>
+                                <option value="">2000$</option>
+                                <option value="">3000$</option>
+                                <option value="">4000$+</option>
+                            </select>
+                        </div>
+                        <div class="search-type">
+                            <p>Bedrooms</p>
+                            <select class="filter-property">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4+</option>
+                            </select>
+                        </div>
+                        <div class="search-type">
+                            <p>Bathrooms</p>
+                            <select class="filter-property">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4+</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button class="btn btn-success ">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="hotel-rooms spad">
+        <div class="container">
+            <div class="row" id="row">
+
+            </div>
+        </div>
+        <!-- Single Property Section Begin -->
+        <div class="single-property" id="headerPro">
+
+        </div>
+        <!-- Single Property End -->
+        <!-- Single Property Deatails Section Begin -->
+        <section class="property-details">
+            <div class="container" id="sectionPro">
+
+            </div>
+        </section>
+        <!-- Single Property Deatails Section End -->
+
+    </section>
+    <footer class="footer-section">
+
+        <!-- Rooms Pic Section End -->
+        <div class="container">
+
+            <div class="col-lg-12 text-center sp-60">
+                <img class="logo-footer" src="image/logo.png" alt="">
+            </div>
+
+            <div class="row p-37">
+                <div class="col-lg-4">
+                    <div class="about-footer">
+                        <h5>About Homes</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend tristique venenatis. Maecenas a rutrum tellus nam vel semper nibh.</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-blog">
+                        <h5>Latest Blog Posts</h5>
+
+                        <div class="single-blog">
+                            <div class="lt-side">
+                                <img src="image/footer-blog-1.jpg" alt="">
+                            </div>
+                            <div class="rt-side">
+                                <h6>How to find the perfect area for<br> your next house.</h6>
+                                <div class="blog-time">
+                                    <i class="flaticon-clock"></i>
+                                    <span>5 min</span>
+                                </div>
+                                <a href="#" class="read-more">
+                                    <i class="flaticon-right-arrow-1"></i>
+                                    <span>Read More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="single-blog">
+                            <div class="lt-side">
+                                <img src="image/footer-blog-2.jpg" alt="">
+                            </div>
+                            <div class="rt-side">
+                                <h6>How to find the perfect area for<br> your next house.</h6>
+                                <div class="blog-time">
+                                    <i class="flaticon-clock"></i>
+                                    <span>5 min</span>
+                                </div>
+                                <a href="#" class="read-more">
+                                    <i class="flaticon-right-arrow-1"></i>
+                                    <span>Read More</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-address">
+                        <h5>Get In Touch</h5>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i><span>132 Liberty Streetelit, Plano, Texas</span>
+                            </li>
+                            <li><i class="far fa-envelope"></i><span>hello@home.com</span></li>
+                            <li><i class="fas fa-mobile-alt"></i><span>214-805-4428</span></li>
+                        </ul>
+                        <p>Monday – Friday: 9 am – 5 pm</p>
+                        <p>Saturday: 9 am – 1pm</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+</body>
+
+</html>

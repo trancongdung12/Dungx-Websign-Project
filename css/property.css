@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Titillium Web';
+    font-size: 25px;
+    color: #222;
+    background: #FDFDFD;
+}
+
+#property-size {
+    font-size: 15px;
+    position: absolute;
+    top: 0px;
+    left: 400px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    opacity: 0.5;
+    background: rgba(76, 175, 80, 0.1);
+}
+
+.navbar:hover {
+    opacity: 2;
+}
+
+.navbar li a:hover {
+    color: red !important;
+}
+
+.img_header {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: auto;
+}
+
+.img_header img {
+    opacity: 0.8;
+    width: 100%;
+    height: 600px;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 35%;
+}
+
+.carousel-caption h1 {
+    font-size: 400%;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 15px #000;
+}
+
+.carousel-caption h3 {
+    font-size: 200%;
+    text-shadow: 2px 2px 10px #000;
+}
+
+.single-property {
+    padding-top: 36px;
+}
+
+.property-title {
+    float: left;
+}
+
+.property-title h3 {
+    color: #30304e;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.property-title a {
+    color: #6f6f8a;
+    font-weight: 400;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.property-title a i {
+    color: #000;
+}
+
+.property-price {
+    float: right;
+}
+
+.property-price p {
+    color: #8f8fa8;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: -4px;
+}
+
+.property-price span {
+    color: #30304e;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.property-img.owl-carousel .owl-item img {
+    width: 100% !important;
+}
+
+.property-img.owl-carousel .owl-item img {
+    border-radius: 4px;
+    display: inline-block;
+    width: auto;
+}
+
+.property-img .owl-nav button[type=button] {
+    position: absolute;
+    left: -23px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: #8AD144;
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    line-height: 44px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.property-img.owl-carousel .owl-nav button.owl-next {
+    left: auto;
+    right: -23px;
+}
+
+.popular-room-features.single-property {
+    margin-bottom: 0;
+}
+
+
+/*---------------------
+  Single Property Details
+-----------------------*/
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.spt-40 {
+    padding-top: 40px;
+}
+
+.p-ins {
+    padding: 0 20px 15px 25px;
+    -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+}
+
+.details-top {
+    padding: 25px 0;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #f3f3f3;
+    margin-left: -25px;
+    margin-right: -20px;
+}
+
+.t-details .register-id {
+    float: left;
+}
+
+.t-details .register-id p {
+    color: #6f6f8a;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 17px;
+}
+
+.t-details .register-id p span {
+    display: inline-block;
+    color: #30304e;
+}
+
+.t-details .popular-room-features.single-property {
+    padding-top: 0;
+    float: right;
+}
+
+.t-details .popular-room-features.single-property .size {
+    float: left;
+}
+
+.t-details .popular-room-features.single-property .beds {
+    float: left;
+    margin-left: 30px;
+}
+
+.t-details .popular-room-features.single-property .baths {
+    float: left;
+    margin-left: 30px;
+}
+
+.t-details .popular-room-features.single-property .garage {
+    float: left;
+    margin-left: 30px;
+}
+
+.property-description,
+.property-features,
+.location-map {
+    margin-bottom: 28px;
+}
+
+.property-description h4,
+.property-features h4,
+.location-map h4 {
+    color: #30304e;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.property-description p,
+.property-features p,
+.location-map p {
+    color: #6f6f8a;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.property-description iframe,
+.property-features iframe,
+.location-map iframe {
+    width: 100%;
+    height: 355px;
+    border: 0;
+}
+
+.property-features h4 {
+    margin-bottom: 13px;
+}
+
+.property-features .property-table {
+    margin-left: -25px;
+    margin-right: -20px;
+    overflow-y: auto;
+}
+
+.property-features .property-table table {
+    width: 100%;
+    min-width: 350px;
+}
+
+.property-features .property-table table tr:nth-child(even) {
+    background: #F8F8F9;
+}
+
+.property-features .property-table table tr td {
+    padding-top: 8px;
+    padding-bottom: 9px;
+    padding-left: 25px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #30304e;
+    width: 120px;
+}
+
+.property-features .property-table table tr td img {
+    margin-right: 13px;
+    height: 16px;
+}
+
+.location-map {
+    margin-bottom: 0;
+}
+
+.location-map h4 {
+    margin-bottom: 24px;
+}
+
+.contact-service {
+    border-radius: 4px;
+    -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    padding-top: 30px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.contact-service img {
+    margin-bottom: 12px;
+}
+
+.contact-service p {
+    color: #6F6F8A;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 6px;
+}
+
+.contact-service h5 {
+    color: #30304e;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contact-service table {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.contact-service table tr:nth-child(odd) {
+    background: #F8F8F9;
+}
+
+.contact-service table tr td {
+    color: #6f6f8a;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px 0;
+}
+
+.contact-service table tr td span {
+    color: #30304e;
+    display: inline-block;
+}
+
+.contact-service .site-btn.list-btn {
+    color: #fff;
+    background: #8AD144;
+    border: none;
+}
+
+
+/* CSS begin */
+
+.single-property {
+    position: relative;
+    top: 600px;
+}
+
+.single-property .container {
+    width: 100%;
+}
+
+.single-property .single-img img {
+    width: 100%;
+    height: 500px;
+}
+
+.property-details {
+    position: relative;
+    top: 600px;
+    width: 100%;
+}
